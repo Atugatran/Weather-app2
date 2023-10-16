@@ -3,7 +3,7 @@ import reducer from "./Reducer";
 
 const AppContext = React.createContext();
 
-const API = `https://api.openweathermap.org/data/2.5/weather?q=Ambala&appid=${process.env.REACT_APP_API}`;
+const API = `https://api.openweathermap.org/data/2.5/weather?q=134201&units=metric&appid=${process.env.REACT_APP_API}`;
 
 const intialState = {
     weather: []
@@ -31,10 +31,8 @@ const AppProvider = ({ children }) => {
             //  Sunset
             let Sdate = new Date(sunset * 1000);
             let Sunset = `${Sdate.getHours()}:${Sdate.getMinutes()}`;
-            //   F to C
-            let celcius = (((tempval - 32) * 5) / 9).toFixed(0);
             // Get Data store in one valable
-            const data = [celcius, location, country, Sunrise, Sunset, tempStatus]
+            const data = [tempval, location, country, Sunrise, Sunset, tempStatus]
             // console.log(data);
             dispatch({ type: "GET_WEATHER", payload: data });
         } catch (error) {

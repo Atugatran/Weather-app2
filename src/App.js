@@ -32,7 +32,7 @@ function App () {
             <p id="date">
               <Daytime />
             </p>
-            <h1 className="temp"> {celcius}&deg;C</h1>
+            <h1 className="temp"> {Math.round(celcius)}&deg;C</h1>
             <h3 className="tempmin_max">
               SR <i id="tempmin">{Sunrise}</i> | SS <i id="tempmax">{Sunset}</i>
             </h3>

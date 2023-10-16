@@ -52,7 +52,7 @@ const Daytime = () => {
             mins = "0" + mins;
         }
 
-        const Daytime = `${month} ${date} | ${hours}:${mins}${periods}`;
+        const Daytime = `${month} ${date} | ${hours}:${mins} ${periods}`;
         return Daytime
     };
     // let daytime;
