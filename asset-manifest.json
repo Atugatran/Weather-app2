@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/Weather-app2/static/js/main.ddcf9205.js",
+    "static/js/787.10a1f716.chunk.js": "/Weather-app2/static/js/787.10a1f716.chunk.js",
+    "index.html": "/Weather-app2/index.html",
+    "main.ddcf9205.js.map": "/Weather-app2/static/js/main.ddcf9205.js.map",
+    "787.10a1f716.chunk.js.map": "/Weather-app2/static/js/787.10a1f716.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.ddcf9205.js"
+  ]
+}
